@@ -23,20 +23,18 @@ class Home extends StatelessWidget {
 
         ),
         body: Center(
-          child: Text(
-            "Testing",
-            style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 3,
-                color: Colors.black87,
-                fontFamily: 'FascinateInline'
-            ),
+          child: Column(
+            children: [
+            Image.asset("assets/android-img.jpg"),
+            Image.asset("assets/Flutter-feature.png"),
+          ],
           ),
         ),
+
+
         floatingActionButton: FloatingActionButton(onPressed: () {
         },
-          child: Text("Clicked"),
+          child: Text("Click"),
           backgroundColor: Colors.indigo[400],
         )
 
