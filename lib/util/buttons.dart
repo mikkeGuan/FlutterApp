@@ -8,11 +8,17 @@ class Buttons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
-        onPressed:  onPressed,
-      child: Text(text),
-      color: Theme.of(context).primaryColor,
+    return SizedBox(
+      width: 120,
 
+      child: FilledButton.tonal(
+          onPressed:  onPressed,
+        child: Text(text),
+
+
+
+
+      ),
     );
   }
 }

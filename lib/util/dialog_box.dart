@@ -23,13 +23,17 @@ class DialogBox extends StatelessWidget {
               hintText: "Add a new task"),
             ),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-              Buttons(text: "Save", onPressed: onSave),
-              Buttons(text: "Cancel", onPressed: onCancel),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
 
-            ],)
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                Buttons(text: "Save", onPressed: onSave),
+                Buttons(text: "Cancel", onPressed: onCancel),
+
+              ],),
+            )
           ],
         ),
       ),

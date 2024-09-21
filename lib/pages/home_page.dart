@@ -75,6 +75,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("TO DO"),
         elevation: 20,
+        backgroundColor: Colors.lightGreenAccent,
+        shape: Border.all(color: Colors.yellowAccent),
+        centerTitle: true,
+        shadowColor: Colors.yellowAccent,
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
